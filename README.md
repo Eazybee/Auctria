@@ -2,6 +2,9 @@
 
 This project is a **Vuejs**-based ticket purchasing system where users can view available tickets and add them to their cart. It leverages **Vuex** for state management and is built with **TypeScript**.  
 
+<img src="https://github.com/Eazybee/Auctria/blob/main/screenshots/Screenshot%202025-02-02%20055336.png?raw=true"/>
+<img src="https://github.com/Eazybee/Auctria/blob/main/screenshots/Screenshot%202025-02-02%20055311.png?raw=true"/>
+<img src="https://github.com/Eazybee/Auctria/blob/main/screenshots/Screenshot%202025-02-02%20055405.png?raw=true"/>
 ---
 
 ## 🚀 Features  
@@ -46,7 +49,7 @@ frontend-interview-challenge/
 
 ### **1️⃣ Clone the repository**
 ```sh
-cd frontend-interview-challenge
+cd Auctria
 ```
 
 ### **2️⃣ Install dependencies**

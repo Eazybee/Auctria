@@ -1,64 +1,85 @@
-# Getting Started
+# 🎟️ Frontend Interview Challenge – Ticket System  
 
-Download the project, please do not fork the project.
+This project is a **Vuejs**-based ticket purchasing system where users can view available tickets and add them to their cart. It leverages **Vuex** for state management and is built with **TypeScript**.  
 
-Make sure you have latest node.js installed on your machine.
+---
 
-Run the following commands in the project directory:
+## 🚀 Features  
+✅ Display available tickets dynamically.  
+✅ Admin can create, edit, update, and delete ticker
+✅ Users can add tickets to their cart while stock lasts. 
+✅ Users can remove tickets to their cart.
+✅ Vuex state management for cart and tickets.
+✅ Persisted store to localhost.
+✅ Jest + Vue Test Utils for unit testing.  
+✅ Prettier for code formating.  
 
-```npm install```
+---
 
-```npm run dev```
+## 🛠️ Tech Stack  
+- **Frontend:** Vue , TypeScript  
+- **State Management:** Vuex  
+- **Testing:** Jest, Vue Test Utils  
+- **Linting & Formatting:** Prettier  
 
-# Vue 3 + TypeScript + Vite
+---
 
-Develop a Vue.js web application that simulates website for selling tickets. The application will have three main pages: an admin page for creating tickets and a home page to display them. The challenge will assess your proficiency in Vue.js, state management, component design, and Typescript.
+## 📂 Project Structure  
+<pre>
+frontend-interview-challenge/ 
+  │── src/ 
+    ├── components/ # Reusable Vue components 
+    ├── views/ # Page views (HomePage.vue)
+    ├── store/ # Vuex store (state management) 
+    ├── types/ # TypeScript interfaces 
+    ├── tests/ # Unit tests (Jest + Vue Test Utils) 
+    ├── main.ts # App entry point │── public/ # Static assets     
+│── jest.config.js # Jest configuration 
+│── tsconfig.json # TypeScript configuration 
+│── package.json # Dependencies and scripts 
+│── README.md # Project documentation
+  </pre>
 
-The application should be responsive and function properly on modern web browsers.
+  ---
 
-Tailwind CSS is included in the project. You may use it to style your application or use CSS framework or UI library of your choice.
+## 🏗️ Installation & Setup  
 
+### **1️⃣ Clone the repository**
+```sh
+cd frontend-interview-challenge
+```
 
-# Core Pages:
+### **2️⃣ Install dependencies**
+```sh
+npm install
+```
 
-## Admin Page (/admin):
+### **3️⃣ Run the development server**
+```
+npm run dev
+```
+The app should now be running at `http://localhost:5173`
 
-This is the page where tickets are created.
+## 📌 Usage
+Route: */*
+- Add ticket to cart
 
-Create an interface with input fields to add new event ticket items. Fields should include: Ticket Name, Description, IsVIP (checkbox), Count (number of tickets available), and Price.
-Implement a submission form that adds the ticket data to a centralized store upon submission.
-Show a list of all created tickets. Each ticket should have a button to delete the ticket from the store.
+Route: */admin*
+- Create ticket
+- Edit ticket
+- Update ticket
+- Delete ticket
+- View all tickets
 
-## Index Page (Home Page):
+Route: */cart*
+- View cart
+- Remove Ticket from cart
+- Checkout(Future Implementation)
 
-This is the page where tickets are displayed and can be added to shopping cart.
+## ✅ Running Tests
+The project includes Jest tests for components and Vuex store logic.
 
-Display a list of all created tickets. 
-VIP tickets should be visually distinguishable from regular tickets (e.g., different color, badge, etc.).
-Add a button to each ticket to add the ticket to a shopping cart.
-
-## Shopping Cart (/cart):
-Create a shopping cart that displays all tickets that have been added to the cart.
-
-Note: The shopping cart does not need to persist on page reload. Shopping cart doesn't need to include checkout functionality.
-
-
-# Functionality:
-
-State Management: Use Vue's reactivity system, Pinia, Vuex, or the Composition API for managing the application state.
-Data Handling: Implement mock data handling. Data does not need to persist on page reload unless you choose to implement local storage or a backend service.
-Routing: Use Vue Router to navigate between the Admin and Index pages.
-
-
-# Code Quality and Standards:
-Write clean, well-structured, and commented code.
-Follow best practices for Vue.js and Typescript.
-
-
-# Bonus Points:
-Testing (Optional, but recommended): Write basic unit tests for key components.
-
-
-# Submission:
-
-Please submit your code in a public GitHub repository and send us the link. Include a README.md file with instructions on how to run the application.
+Run all tests
+```sh
+npm run test
+```
